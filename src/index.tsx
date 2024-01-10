@@ -8,6 +8,7 @@ import { HomeComponent } from './components/Home';
 import { HomeChild } from './components/HomeChild';
 import { LinkComponent } from './components/Link';
 import Login from './components/Login';
+import Registration from './components/Registration';
 //import reportWebVitals from './reportWebVitals';
 const myrouter = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const myrouter = createBrowserRouter([
       {
         path: 'login',
         Component: Login
+      },
+      {
+        path: 'register',
+        Component: Registration
       }
     ]
   },

@@ -17,6 +17,7 @@ const NavComponent: React.FunctionComponent<INavProps> = (props) => {
             <Nav.Link as={Link} to="home" eventKey='0'>Home</Nav.Link>
             <Nav.Link as={Link} to="link" eventKey="1">Link</Nav.Link>
             <Nav.Link as={Link} to="login" eventKey="2">Login</Nav.Link>
+            <Nav.Link as={Link} to="register" eventKey="3">Registration</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
