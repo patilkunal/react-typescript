@@ -57,7 +57,7 @@ const LoginComponent: React.FunctionComponent<ILoginProps> =  (props: ILoginProp
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                     <Form.Group controlId='username'>
                         <Form.Label>Username</Form.Label>
-                        <Form.Control  required name="username" onChange={handleChange} isInvalid={!!errors.username}
+                        <Form.Control required name="username" onChange={handleChange} isInvalid={!!errors.username}
                         type='text' value={formData.username} placeholder='Enter username'></Form.Control>
                         <Form.Control.Feedback type='invalid'>{errors.username}</Form.Control.Feedback>
                     </Form.Group>
@@ -73,28 +73,7 @@ const LoginComponent: React.FunctionComponent<ILoginProps> =  (props: ILoginProp
                     </Form.Group>
                 </Form>
                 </div>
-                {/*
-                <div>
-                <form className='needs-validation'>
-                    <div className={`form-group ${errors.email && 'was-validated'} mb-2`}>
-                        <label htmlFor='email' className='form-label'>Email Address</label> 
-                        <input onChange={handleChange} type="email" name='email' id='email'  className='form-control'></input> 
-                        {errors.email &&
-                        <div className="invalid-feedback">errors.email</div>}
-                    </div>
-                    <div className='form-group mb-2'>
-                        <label htmlFor='password' className='form-label'>Password</label>
-                        <input onChange={handleChange} type='password' name='password' id='password' className='form-control' required></input>
-                    </div>
-                    <div className='form-group form-check mb-2'>
-                        <input type='checkbox' id='rememberme' name='rememberme' className='form-check-input'></input>
-                        <label htmlFor='rememberme' className='form-check-label'>Remember Me</label>
-                    </div>
-                    <button onSubmit={handleSubmit} type="submit" className='btn btn-success mt-2 w-100'>Login</button>
-                </form>
-                </div>
-                */}
-                </div>
+            </div>
         </div>
     );
   }
